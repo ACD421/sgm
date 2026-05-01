@@ -56,13 +56,13 @@ SGM preserves 95% of a 494M-parameter LLM's general knowledge during aggressive 
 
 ### Continual Learning Benchmarks
 
-**Split-MNIST** (5 binary classification tasks, 3 seeds):
+**Multi-Head Split-MNIST** (5 binary tasks, separate output per task, 3 seeds):
 
 | Method | Avg Accuracy | Backward Transfer |
 |--------|-------------|-------------------|
-| Naive | 19.8% | -99.6% |
-| EWC | 19.8% | -99.6% |
-| **SGM** | **23.4%** | **-74.8%** |
+| Naive | 90.8% | -11.2% |
+| EWC | 90.8% | -11.3% |
+| **SGM** | **99.4%** | **-0.2%** |
 
 ![Split-MNIST](figures/fig_split_mnist.png)
 

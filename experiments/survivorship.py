@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-HYBRID BIGBOY - Andrew's CoalitionLockingSystem + GPU vectorization
+Survivorship Amplification Measurement - Andrew's CoalitionLockingSystem + GPU vectorization
 ====================================================================
-Andrew's primitive: fixed mutation count (50), causal ablation, coalition
+SGM primitive: fixed mutation count (50), causal ablation, coalition
 detection, convergence-based organic locking.
 
 My addition: GPU batch evaluation, scaled steps for high dims, variance-
@@ -28,7 +28,7 @@ print(flush=True)
 
 class SGMBigBoy:
     """
-    Andrew's CoalitionLockingSystem ported to GPU.
+    SGM CoalitionLockingSystem on GPU.
     Fixed mutation count (the intentional selective pressure).
     Convergence + causal + coalition locking (organic, distributed).
     """
@@ -297,7 +297,7 @@ for dim in dims:
 
 # Final table
 print(f"\n{'='*60}")
-print(f"  HYBRID BIGBOY RESULTS")
+print(f"  Survivorship Amplification Measurement RESULTS")
 print(f"{'='*60}")
 
 prior = [(10000,0.013,0.957,3.8), (20000,0.017,0.943,5.7), (50000,0.024,0.915,14.8)]

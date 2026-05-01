@@ -48,14 +48,10 @@ class SGMSystem:
         for step in range(n_steps):
             x2 = self.x.copy()
 
-            if len(free) < 5:
-                idx = np.random.choice(self.dim, min(30, self.dim), replace=False)
-                x2[idx] += np.random.randn(len(idx)).astype(self.dtype) * lr * 0.1
-            else:
-                # FIXED mutation count: the selective pressure
-                n_mutate = min(50, len(free))
-                idx = np.random.choice(free, n_mutate, replace=False)
-                x2[idx] += np.random.randn(n_mutate).astype(self.dtype) * lr
+            # FIXED mutation count on FREE dims only. Locked dims NEVER change.
+            n_mutate = min(50, len(free))
+            idx = np.random.choice(free, n_mutate, replace=False)
+            x2[idx] += np.random.randn(n_mutate).astype(self.dtype) * lr
 
             new_loss = loss_fn(x2)
             if new_loss < best_loss:

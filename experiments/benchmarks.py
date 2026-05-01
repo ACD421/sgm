@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-SGM PUBLICATION v2 -- THE 2233x METHOD
+SGM PUBLICATION v2 -- Region pretrain + ablation importance method
 ========================================
 Region-based pretrain (brain regions specialize)
 Ablation-based importance (important synapses preserved)
@@ -26,7 +26,7 @@ from torch.utils.data import DataLoader, Subset
 from torchvision import datasets, transforms
 
 DEVICE = torch.device('cuda')
-FIG = Path("C:/Users/andre/Downloads/sgm_pub_v2")
+FIG = Path("figures")
 FIG.mkdir(exist_ok=True)
 A_PRED = -np.log(np.cos(1/np.pi))
 

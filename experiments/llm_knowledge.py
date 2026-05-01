@@ -17,7 +17,7 @@ from pathlib import Path
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 DEVICE = torch.device('cuda')
-FIG = Path("C:/Users/andre/Downloads/sgm_pub_v2")
+FIG = Path("figures")
 
 torch.cuda.empty_cache()
 gc.collect()
@@ -25,12 +25,12 @@ gc.collect()
 print("Loading Qwen2.5-0.5B (fp16 + AMP)...", flush=True)
 
 MODEL_NAME = "Qwen/Qwen2.5-0.5B"
-tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME, trust_remote_code=True)
+tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
 if tokenizer.pad_token is None:
     tokenizer.pad_token = tokenizer.eos_token
 
 model = AutoModelForCausalLM.from_pretrained(
-    MODEL_NAME, torch_dtype=torch.float32, trust_remote_code=True
+    MODEL_NAME, torch_dtype=torch.float32
 ).to(DEVICE)
 
 n_params = sum(p.numel() for p in model.parameters())
@@ -152,7 +152,6 @@ print(f"Locked {lock_pct:.1%} of {total_params/1e6:.0f}M params", flush=True)
 # Fine-tune with SGM + AMP
 optimizer = torch.optim.AdamW(
     [p for p in model.parameters() if p.requires_grad], lr=5e-5)
-scaler = torch.amp.GradScaler('cuda')
 
 knowledge_trajectory = []
 ppl_trajectory = []

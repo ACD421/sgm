@@ -123,16 +123,14 @@ SGM is a **missing primitive** -- a substrate layer that sits underneath trainin
 
 ```
 sgm/
-  core.py          # The primitive: binary locking + evolutionary optimization
-  gates.py         # NAND GateMesh (5 bytes/gate, evolvable Boolean circuits)
-  llm.py           # LLM knowledge preservation via gradient-compatible locking
+  core.py            # The primitive: SGMSystem (evolutionary) + SGMGradientLock (LLM)
+  gates.py           # NAND GateMesh (5 bytes/gate, evolvable Boolean circuits)
 experiments/
-  survivorship.py  # Alpha measurement across dimensions
-  split_mnist.py   # Continual learning benchmark
-  permuted_mnist.py # 20-task retention test
-  llm_knowledge.py # Qwen2.5-0.5B knowledge preservation
+  survivorship.py    # Alpha measurement across dimensions (GPU, CuPy)
+  benchmarks.py      # Split-MNIST + Permuted-MNIST + survivorship curves
+  llm_knowledge.py   # Qwen2.5-0.5B knowledge preservation (SGM only)
   nand_survivorship.py # Boolean space amplification
-figures/           # Publication-ready charts
+figures/             # Publication-ready charts
 ```
 
 ## Quick Start
@@ -142,14 +140,14 @@ git clone https://github.com/ACD421/sgm.git
 cd sgm
 pip install -r requirements.txt
 
-# Run survivorship measurement
+# Run survivorship measurement (requires CUDA + CuPy)
 python experiments/survivorship.py
 
-# Run LLM knowledge preservation
+# Run LLM knowledge preservation (requires ~8GB VRAM)
 python experiments/llm_knowledge.py
 
-# Run Split-MNIST benchmark
-python experiments/split_mnist.py
+# Run Split-MNIST + Permuted-MNIST benchmarks
+python experiments/benchmarks.py
 ```
 
 ## Requirements

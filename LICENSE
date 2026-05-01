@@ -1,56 +1,132 @@
 PROPRIETARY LICENSE
-Version 1.0, April 2026
+Version 1.0, March 2026
 
 Copyright (c) 2025-2026 Andrew C. Dorman
 All Rights Reserved.
 
 NOTICE: This software and all associated documentation, algorithms, and
 intellectual property are the exclusive property of Andrew C. Dorman.
+This is NOT open-source software.
 
 ==========================================================================
 1. PERMITTED USE
 ==========================================================================
+
 You MAY:
+
   (a) View, read, and study the source code for personal education.
   (b) Download and run the software for non-commercial testing,
       evaluation, and academic research.
   (c) Reference this work in academic papers, blog posts, or
-      presentations, provided you include proper attribution.
-  (d) Fork this repository on GitHub for personal, non-commercial use.
+      presentations, provided you include proper attribution
+      (see Section 3).
+  (d) Fork this repository on GitHub for personal, non-commercial use
+      only.
 
 ==========================================================================
 2. PROHIBITED USE
 ==========================================================================
-You MAY NOT, without prior written authorization:
-  (a) Use this software in any commercial product, service, or offering.
-  (b) Incorporate any algorithm, architecture, or method into commercial
-      or proprietary software.
+
+You MAY NOT, without prior written authorization from the copyright holder:
+
+  (a) Use this software, or any part of it, in any commercial product,
+      service, or offering -- whether sold, licensed, hosted, or provided
+      as a service.
+  (b) Incorporate any algorithm, architecture, method, or code from this
+      repository into commercial or proprietary software.
   (c) Use this software to train, fine-tune, or augment commercial AI/ML
       models or systems.
-  (d) Redistribute, sublicense, sell, or transfer this software.
-  (e) Remove or alter license notices or attribution requirements.
-  (f) Represent this work as your own.
+  (d) Redistribute, sublicense, sell, lease, or otherwise transfer this
+      software or derivative works to third parties.
+  (e) Remove, alter, or obscure this license notice, copyright notices,
+      or attribution requirements.
+  (f) Represent this work, or any derivative of it, as your own.
+  (g) Use the name "SGM," or "Andrew C. Dorman" to endorse or promote
+      products derived from this software without written permission.
 
 ==========================================================================
 3. ATTRIBUTION
 ==========================================================================
-Any permitted use must include:
+
+Any permitted use that references, cites, or builds upon this work MUST
+include the following attribution:
+
   "Based on work by Andrew C. Dorman"
   https://github.com/ACD421
+
+Failure to provide attribution constitutes a violation of this license.
 
 ==========================================================================
 4. COMMERCIAL LICENSING
 ==========================================================================
-Contact: andorman@ttu.edu
+
+Commercial use of any kind requires a separate commercial license
+agreement. To obtain a commercial license, contact:
+
+  Andrew C. Dorman
+  andorman@ttu.edu
+
+Commercial licensing terms are negotiated on a case-by-case basis and
+may include royalties, one-time fees, or revenue-sharing arrangements
+at the sole discretion of the copyright holder.
 
 ==========================================================================
-5. NO WARRANTY
+5. ENFORCEMENT AND REMEDIES
 ==========================================================================
-THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.
+
+  (a) MONITORING: The copyright holder actively monitors for unauthorized
+      use of this software.
+
+  (b) LEGAL ACTION: Any unauthorized commercial use, redistribution, or
+      violation of this license will be met with legal action. The
+      copyright holder reserves the right to pursue:
+
+        - Injunctive relief (court order to cease use)
+        - Actual damages and lost profits
+        - Statutory damages where applicable
+        - Disgorgement of profits derived from unauthorized use
+        - Recovery of attorney fees and court costs
+
+  (c) RETROACTIVE LIABILITY: If you have used this software commercially
+      without authorization, you are liable for damages from the date of
+      first unauthorized use, regardless of when the violation is
+      discovered.
+
+  (d) NOTIFICATION: If you become aware of any unauthorized use of this
+      software by a third party, you are encouraged to notify the
+      copyright holder at andorman@ttu.edu.
 
 ==========================================================================
-6. GOVERNING LAW
+6. NO WARRANTY
 ==========================================================================
-State of Texas, United States of America.
 
-For questions or commercial licensing: andorman@ttu.edu
+THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL
+THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY
+ARISING FROM YOUR USE OF THIS SOFTWARE.
+
+==========================================================================
+7. TERMINATION
+==========================================================================
+
+This license terminates automatically if you violate any of its terms.
+Upon termination, you must destroy all copies of the software in your
+possession. Termination does not limit the copyright holder's right to
+pursue legal remedies for violations that occurred before termination.
+
+==========================================================================
+8. GOVERNING LAW
+==========================================================================
+
+This license shall be governed by and construed in accordance with the
+laws of the State of Texas, United States of America. Any disputes
+arising under this license shall be subject to the exclusive jurisdiction
+of the courts in Lubbock County, Texas.
+
+==========================================================================
+
+For questions, commercial licensing, or to report violations:
+  Andrew C. Dorman
+  andorman@ttu.edu
+  https://github.com/ACD421

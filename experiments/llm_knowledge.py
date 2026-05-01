@@ -18,6 +18,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 
 DEVICE = torch.device('cuda')
 FIG = Path("figures")
+FIG.mkdir(exist_ok=True)
 
 torch.cuda.empty_cache()
 gc.collect()

@@ -1,0 +1,56 @@
+PROPRIETARY LICENSE
+Version 1.0, April 2026
+
+Copyright (c) 2025-2026 Andrew C. Dorman
+All Rights Reserved.
+
+NOTICE: This software and all associated documentation, algorithms, and
+intellectual property are the exclusive property of Andrew C. Dorman.
+
+==========================================================================
+1. PERMITTED USE
+==========================================================================
+You MAY:
+  (a) View, read, and study the source code for personal education.
+  (b) Download and run the software for non-commercial testing,
+      evaluation, and academic research.
+  (c) Reference this work in academic papers, blog posts, or
+      presentations, provided you include proper attribution.
+  (d) Fork this repository on GitHub for personal, non-commercial use.
+
+==========================================================================
+2. PROHIBITED USE
+==========================================================================
+You MAY NOT, without prior written authorization:
+  (a) Use this software in any commercial product, service, or offering.
+  (b) Incorporate any algorithm, architecture, or method into commercial
+      or proprietary software.
+  (c) Use this software to train, fine-tune, or augment commercial AI/ML
+      models or systems.
+  (d) Redistribute, sublicense, sell, or transfer this software.
+  (e) Remove or alter license notices or attribution requirements.
+  (f) Represent this work as your own.
+
+==========================================================================
+3. ATTRIBUTION
+==========================================================================
+Any permitted use must include:
+  "Based on work by Andrew C. Dorman"
+  https://github.com/ACD421
+
+==========================================================================
+4. COMMERCIAL LICENSING
+==========================================================================
+Contact: andorman@ttu.edu
+
+==========================================================================
+5. NO WARRANTY
+==========================================================================
+THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND.
+
+==========================================================================
+6. GOVERNING LAW
+==========================================================================
+State of Texas, United States of America.
+
+For questions or commercial licensing: andorman@ttu.edu

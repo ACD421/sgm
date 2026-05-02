@@ -66,6 +66,17 @@ SGM preserves 95% of a 494M-parameter LLM's general knowledge during aggressive 
 
 ![Split-MNIST](figures/fig_split_mnist.png)
 
+**Multi-Head Split-CIFAR-10** (5 binary tasks, CNN backbone, 3 seeds):
+
+| Method | Avg Accuracy | Backward Transfer |
+|--------|-------------|-------------------|
+| Naive | 81.1% | -12.9% |
+| EWC | 85.5% | -4.9% |
+| SGM Evo+Coalition | 86.1% | -3.0% |
+| **SGM Coalition** | **87.2%** | **-3.0%** |
+
+![CIFAR-10](figures/fig_split_cifar10.png)
+
 **Permuted-MNIST** (20 sequential tasks):
 
 ![Permuted-MNIST Retention](figures/fig_permuted_mnist.png)
